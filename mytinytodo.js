@@ -1349,7 +1349,6 @@ function saveTask(form)
 			refreshTaskCnt();
 			$('#taskrow_'+item.id).effect("highlight", {color:_mtt.theme.editTaskFlashColor}, 'normal', function(){$(this).css('display','')});
 	});
-	$("#edittags").flushCache();
 	flag.tagsChanged = true;
 	return false;
 };
@@ -1750,8 +1749,6 @@ function moveTaskToList(taskId, listId)
 			refreshTaskCnt();
 		}
 	});
-
-	$("#edittags").flushCache();
 	flag.tagsChanged = true;
 };
 
